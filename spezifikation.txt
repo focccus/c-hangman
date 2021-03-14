@@ -1,0 +1,24 @@
+
+Spezifikation:
+	• Das Programm sucht sich zufällig ein Wort aus einer vorgegebenen Liste aus.
+	• Der Spieler kann jede Runde einen Buchstaben eingeben, es wird überprüft, ob er im Wort vorkommt und das Wort mit allen Buchstaben, die richtig erraten wurden mit dem Bild ausgegeben. Alle verbleibenden sind mit "_" versteckt.
+	• Das Spiel ist gewonnen, wenn das ganze Wort erraten wurde.
+	• Bei falschen Eingaben wird ein Bild eines Galgenmannes vervollständigt.
+	• Der Spieler kann verlieren, wenn das Bild vollständig ist.
+	• Es werden alle Buchstaben, die falsch geraten wurden, an der Seite angezeigt.
+	• Mit "0" kann man das Programm abbrechen.
+	• Mit "1" wird das vollständige Wort angezeigt.
+	• Nach einem Spiel kann man "s" eingeben um nochmal zu spielen.
+	
+Design
+	• Für die Inputs werden innerhalb eine while(1) Schleife, Buchstaben eingelesen.
+	• Bereits geratene Buchstaben werden in einem Array gespeichert.
+	• Eine Funktion gibt abhängig von einer Zahl an falscher Buchstaben den Galgenmann aus.
+	• Die Funktion getWord gibt das Wort nur mit den bereits geratenen Buchstaben zurück.
+	• Wenn die Zahl von falschen Versuchen einen Wert übersteigt, ist das Spiel verloren. Wenn das Wort mit dem von getWord übereinstimmt, ist das Spiel gewonnen.
+
+Tests
+	• Ungültigen Buchstaben eingeben(nicht a-z)
+	• Buchstaben doppelt eingeben
+	• Mehrere Buchstaben eingeben
+	• Verschiedene Betriebssysteme probieren
